@@ -1,6 +1,6 @@
 {
   "title": "Begineeer Name",
   "icon": "MyIcon",
- 
+ "root":true,
   "defaultOpen": true
 }
