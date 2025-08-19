@@ -1,0 +1,36 @@
+---
+title: Components
+description: Components
+---
+
+## Code Block
+
+```js
+
+import { RootProvider } from 'fumadocs-ui/provider';
+import type { ReactNode } from 'react';
+
+export default function Layout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body
+        // you can use Tailwind CSS too
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          minHeight: '100vh',
+        }}
+      >
+        <RootProvider>{children}</RootProvider>
+      </body>
+    </html>
+  );
+}
+```
+
+## Cards
+
+<Cards className ="w-[255px]">
+  <Card className = "text=red-500 bg-red-500 hover:bg-blue-500" title="Learn more about Next.js" href="https://nextjs.org/docs" />
+  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
+</Cards>
