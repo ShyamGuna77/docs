@@ -1,5 +1,6 @@
 {
   "title": "Typescript",
+  "icon": "IconBrandTypescript",
   "description": "Typescript Documentation",
   "root": true,
   "defaultOpen": true

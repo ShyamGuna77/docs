@@ -1,6 +1,7 @@
 {
-  "title": "Begineeer Name",
-  "icon": "MyIcon",
- "root":true,
+  "title": "Python",
+  "icon": "IconBrandPython",
+
+  "root": true,
   "defaultOpen": true
 }
