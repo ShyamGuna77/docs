@@ -4,5 +4,11 @@
   "icon": "IconBrandPython",
 
   "root": true,
-  "defaultOpen": false
+  "defaultOpen": false,
+  "pages":["---Introduction---",
+  "beginner",
+  "tabs",
+  "---Advanced---",
+  "demo"
+]
 }

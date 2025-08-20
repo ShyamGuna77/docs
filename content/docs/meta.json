@@ -2,5 +2,5 @@
   "title": "Name of Folder",
   "description": "The description of root folder (optional)",
   "root": true,
-  "pages": ["index", "[Vercel](https://vercel.com)","[Triangle][Vercel](https://vercel.com)", "..."]
+  "pages": ["index",  "..."]
 }
