@@ -5,7 +5,29 @@ import { source } from "@/lib/source";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <DocsLayout tree={source.pageTree} {...baseOptions}>
+    <DocsLayout
+      tree={source.pageTree}
+      {...baseOptions}
+      sidebar={{
+        tabs: [
+          {
+            title: "Documentation",
+            description: "Main documentation and guides",
+            url: "/docs",
+          },
+          {
+            title: "Python",
+            description: "Python documentation and guides",
+            url: "/docs/python/beginner",
+          },
+          {
+            title: "typescript",
+            description: "Typescript documentation and guides",
+            url: "/docs/typescript/info",
+          },
+        ],
+      }}
+    >
       {children}
     </DocsLayout>
   );

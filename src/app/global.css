@@ -1,8 +1,9 @@
-@import 'tailwindcss';
-@import 'fumadocs-ui/css/neutral.css';
-@import 'fumadocs-ui/css/preset.css';
+@import "tailwindcss";
+@import "fumadocs-ui/css/black.css";
+@import "fumadocs-ui/css/preset.css";
 @import "tw-animate-css";
-@import 'fumadocs-twoslash/twoslash.css';
+@import "fumadocs-twoslash/twoslash.css";
+@import "fumadocs-ui/css/shadcn.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -46,7 +47,8 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(98.8% 0.007 53.45);
+  --color-fd-background: hsl(22, 44%, 87%);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -69,17 +71,18 @@
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
+  --sidebar: oklch(98.8% 0.007 53.45);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-primary: oklch(98.8% 0.007 53.45);
+  --sidebar-primary-foreground: oklch(0.145 0 0);
+  --sidebar-accent: oklch(98.8% 0.007 53.45);
+  --sidebar-accent-foreground: oklch(0.145 0 0);
+  --sidebar-border: oklch(98.8% 0.007 53.45);
+  --sidebar-ring: oklch(98.8% 0.007 53.45);
 }
 
 .dark {
+  --color-fd-background: hsla(207 100% 7.6% / 0.15);
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);

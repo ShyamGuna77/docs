@@ -1,4 +1,5 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import { IconBookFilled } from '@tabler/icons-react';
 
 /**
  * Shared layout configurations
@@ -24,5 +25,15 @@ export const baseOptions: BaseLayoutProps = {
     ),
   },
   // see https://fumadocs.dev/docs/ui/navigation/links
-  links: [],
+  links: [
+    {
+      icon: <IconBookFilled />,
+      text: "Blog",
+      url: "/blog",
+      active: "nested-url",
+      // secondary items will be displayed differently on navbar
+      secondary: false,
+    },
+  
+  ],
 };

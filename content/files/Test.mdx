@@ -1,0 +1,64 @@
+---
+title: Mermaid
+description: Writing Mermaid diagrams in Fumadocs MDX.
+---
+
+## Getting Started
+
+You can use the built-in `<Mermaid />` component to render diagrams.
+
+### Example: URL Shortener Flow
+
+
+
+<Mermaid
+  chart="
+sequenceDiagram
+    participant U as User
+    participant FE as Frontend (Website/App)
+    participant BE as Backend (API Server)
+    participant DB as Database
+    participant R as Redirect Service
+
+    U->>FE: Enter long URL
+    FE->>BE: Send request (POST /shorten { longUrl })
+    BE->>DB: Save mapping (shortId → longUrl)
+    DB-->>BE: Confirmation (shortId created)
+    BE-->>FE: Return short URL
+    FE-->>U: Show short URL
+
+    Note over U,FE: Later, when user visits short URL
+
+    U->>R: Request short URL
+    R->>DB: Lookup shortId
+    DB-->>R: Return original long URL
+    R-->>U: Redirect to long URL
+
+"
+/>
+
+---
+
+### Example: Journey Diagram
+
+<Mermaid
+  chart="
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+"
+/>
+
+---
+
+<Callout title="Tip">
+  You can pass any Mermaid definition as a string to the{" "}
+  <code>&lt;Mermaid /&gt;</code> component. Fumadocs takes care of rendering for
+  you, no extra plugins needed.
+</Callout>

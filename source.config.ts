@@ -22,7 +22,6 @@ export const docs = defineDocs({
 
 export default defineConfig({
   mdxOptions: {
-
     rehypePlugins: (v) => [rehypeKatex, ...v],
     remarkPlugins: [remarkMath],
     rehypeCodeOptions: {
@@ -37,6 +36,5 @@ export default defineConfig({
     },
 
     // Place it at first, it should be executed before the syntax highlighter
-    
   },
 });

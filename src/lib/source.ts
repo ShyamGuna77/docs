@@ -3,7 +3,6 @@ import { loader } from "fumadocs-core/source";
 import * as TablerIcons from "@tabler/icons-react";
 import { createElement } from "react";
 
-
 export const source = loader({
   // it assigns a URL to your pages
   baseUrl: "/docs",
@@ -11,7 +10,6 @@ export const source = loader({
   icon(icon) {
     if (!icon) return;
 
-    
     let IconComponent;
 
     // First try: exact match

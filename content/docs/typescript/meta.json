@@ -3,5 +3,5 @@
   "icon": "IconBrandTypescript",
   "description": "Typescript Documentation",
   "root": true,
-  "defaultOpen": true
+  "defaultOpen": false
 }
