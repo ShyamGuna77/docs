@@ -9,6 +9,7 @@ Welcome! This is a short, hands-on crash course to get you comfortable writing y
 
 - Windows/macOS/Linux: download from [python.org](https://www.python.org/downloads/).
 - After installing, verify:
+
 ```bash
 python --version
 # or sometimes:
@@ -18,11 +19,13 @@ python3 --version
 ## Your first script
 
 Create a file named `hello.py` and add:
+
 ```python
 print("Hello, world!")
 ```
 
 Run it:
+
 ```bash
 python hello.py
 # or:
@@ -32,14 +35,18 @@ python3 hello.py
 ## Use the REPL (interactive shell)
 
 Open the Python prompt:
+
 ```bash
 python
 ```
+
 Then try:
+
 ```python
 2 + 2
 print("hi")
 ```
+
 Exit with `exit()` or `Ctrl + Z` then Enter on Windows (`Ctrl + D` on macOS/Linux).
 
 ## Variables and basic types
@@ -55,6 +62,7 @@ print(type(name))     # <class 'str'>
 ```
 
 ### Strings
+
 ```python
 greeting = f"Hello, {name}!"
 print(greeting.lower())
@@ -159,6 +167,7 @@ pip freeze > requirements.txt
 ```
 
 Deactivate anytime with:
+
 ```bash
 deactivate
 ```
@@ -166,9 +175,6 @@ deactivate
 ## Mini-project: Number guessing game
 
 Create `guess.py`:
-
-
-
 
 ```python
 import random
@@ -196,6 +202,7 @@ while True:
 ```
 
 Run it:
+
 ```bash
 python guess.py
 ```
@@ -207,3 +214,5 @@ python guess.py
 - Build a tiny app: a to-do list, a CLI timer, or a unit converter.
 
 Happy coding!
+
+<Feedback />
